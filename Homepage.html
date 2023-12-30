@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Map Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="navigation">
+      <img
+        src="./Dayalbagh_Educational_Institute_logo.jpg"
+        height="80px"
+        style="margin: 10px"
+        alt=""
+      />
+      <div class="headtext">
+        <h2>Dayalbagh Educational Institute</h2>
+        <h4>Department of Physics and Computer Science</h4>
+      </div>
+      <div class="search-bar">
+        <input type="text"id="searchInput"  placeholder="   Enter location" />
+        <button onclick="openPage()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </div>
+    <section class="mapPage">
+      <div class="sidebar">
+        <h1>Map Page</h1>
+        <li class="Heading">
+          <a href="./uttar_pradesh.html">Uttar Pradesh</a>
+        </li>
+        <li>
+          <a href="./bengaluru.html">Bengaluru</a>
+        </li>
+        <li>
+          <a href="./delhi.html">Delhi</a>
+        </li>
+        <li>
+          <a href="./bihar.html">Bihar</a>
+        </li>
+        <li>
+          <a href="./surat.html">Surat</a>
+        </li>
+        <li>
+          <a href="./gurgaon.html">Gurgaon</a>
+        </li>
+        <li>
+          <a href="./madhya_pradesh.html">Madhya Pradesh</a>
+        </li>
+      </div>
+      
+      <!-- <label for="location">Search Location:</label> -->
+      
+      <!-- <div class="map"> -->
+        <div id="map"></div>
+      <!-- </div> -->
+        
+    </section>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="./script.js"></script>
+  </body>
+</html>
