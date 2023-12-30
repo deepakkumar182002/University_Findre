@@ -8,7 +8,7 @@
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     overflow-y: auto;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
   .navigation img{
     position: relative;
@@ -18,22 +18,22 @@
     position: relative;
     background-color: #fff;
     height: 100px;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
+    width: 100%;
     box-shadow: 0 5px 10px #9c9c9c97;
-    flex-wrap: wrap;
-    align-items: center;
     z-index: 1;
-    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .headtext {
     height: 100px;
     width: auto;
     /* background-color: aqua; */
     padding: 22px 10px;
+    position: absolute;
+    left: 100px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
   }
   section.mapPage {
@@ -77,7 +77,7 @@
 .search-bar {
     position: relative;
     top: 15px;
-    left: 600px;
+    right: 0px;
     height: 60px;
     background-size: contain;
 }
@@ -106,17 +106,26 @@
     z-index: 1;
   }
   @media  (max-width: 448px){
+        .navigation img{
+          scale: 80%;
+        }
         .navigation{
             background-size: contain;
+            height: 80px;
+            width: 100%;
         }
         .headtext{
             position: absolute;
             /* background-color: aqua; */
-            top: 0px ;
+            top: -20px ;
             left: 30px;
             scale: 60%;
-            transition: 2s left;
+            transition: 2s;
+        }
+      }
+      @media  (max-width: 900px){
+        .search-bar{
+          display: none;
         }
         
-
-    }
+      }
