@@ -111,9 +111,10 @@ const map = L.map('map').setView([24.5, 82], 6); // Centered around India
                 "madhya pradesh": "./madhya_pradesh.html",
                 "delhi": "./delhi.html",
                 "bihar": "./bihar.html",
-                "bengaluru": "./bengaluru.html",
-                "surat": "./surat.html",
-                "gurgaon": "./gurgaon.html"
+                "karnataka": "./karnataka.html",
+                "gujarat": "./gujarat.html",
+                "haryana": "./haryana.html",
+                "newdelhi": "./newdelhi.html"
             };
 
             const matchedPage = pageMappings[userInput];
